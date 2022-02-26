@@ -1,6 +1,7 @@
-export const signInAction = () => {
+export const signInAction = (userId: string) => {
   return {
-    type: AuthAction.SIGN_IN
+    type: AuthAction.SIGN_IN,
+    payload: userId
   };
 };
 
